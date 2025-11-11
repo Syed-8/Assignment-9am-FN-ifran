@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            background: color #f8f8f8;
+            margin: 30px;
+        }
+
+        h1{
+            text-align: center;
+            color: darkcyan;
+            margin-bottom: 40px;
+        }
+
+        h2{
+            color:#444;
+            border-bottom: 2px solid ;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        /*Task 6 product card*/
+        .product-cradr{
+            width: 200px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px black;
+
+        } 
+
+        .product-card img {
+            width: 100%;
+            border-radius:10px;
+        }
+        .product-card h3 {
+            margin: 10px 0 5px;
+
+        }
+
+        .product-card p {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .product button {
+            background-color: darkblue;
+            color: white;
+            border:none;
+            padding: 10px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        /*Task 7 Login card*/
+        .login-box {
+            width: 300px;
+            background-color: white;
+            border: 2px solid gray;
+            border-radius:10px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid ;
+            border-radius: 5px ;
+
+        }
+        .input-box button {
+            width: 100%;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /*Task 8- profile card*/
+        .profile-card{
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            margin: 30px 0;
+            box-shadow: 0 2px 5px rgba(red, green, blue);
+
+        }
+
+        .profile-section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+
+        }
+        .profile-section:last-child{
+            border-bottom: none;
+        }
+
+        /*Task 9 Notification Box */
+        .alert-box {
+            border: 2px solid orange;
+            background-color: #fff3cd;
+            color: #858585;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        /*Task 10 Three Box Layout*/
+        .three-boxes{
+            display: flex;
+            gap:20px;
+        }
+        .three-boxes div{
+            width: 150px;
+            height: 100px; 
+            background-color: white;
+            border: 2px solid #333;
+            text-align: center;
+            line-height: 100px;
+        }
+        .box{ margin: 10px; padding: 5px;}
+        .box{ margin: 20px; padding: 15px;}
+        .box{ margin: 30px; padding: 25px;}  
+        
+    </style>
+</head>
+
+<body>
+    <h1>Box Model Practical (task 6-10)</h1>
+
+    <!--Task 6 product card-->
+    <h2>Task 6:Product card</h2>
+    <div class="product card">
+    <img src="./images.jpeg" alt="product iimage">
+    <h3>Rolex watch</h3>
+    <p>Rolex is a Swiss luxury watchmaker and manufacturer based in Geneva, Switzerland</p>
+    <button>add to cart</button>
+    </div>
+
+    <!--Task 7 Login B0x-->
+    <h2>Login Form Box</h2>
+    <div class="login-box">
+        <h3>Login</h3>
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <button>Login</button>
+    </div>
+
+    <!--Task8 profile card-->
+    <h2>Task 8 Profile card</h2>
+    <div class="profile-card">
+      <div class="profile-card"><strong>Name:</strong>Syed Irfan</div>
+      <div class="profile-card"><strong>Role:</strong>Front developer</div>
+       <div class="profile-card"><strong>Location:</strong>chennai</div>
+       </div>
+
+       <!--Task 9 notification Box-->
+       <h2>Task 9: notification Alert Box</h2>
+       <div class="alert-box"></div>
+       
+       <!--Task 10 Box layout-->
+       <h2>Task 10: margin & padding </h2>
+       <div class="three-boxes">
+        <div class="box1">Box 1</div>
+        <div class="box1">Box 2</div>
+        <div class="box1">Box 3</div>
+        </div>
+
+       
+</body>
+
+</html>
