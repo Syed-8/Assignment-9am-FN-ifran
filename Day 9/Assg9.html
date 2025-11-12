@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex box basics</title>
+  <style>
+    /* 1. Display Values */
+    .display div{
+      margin: 10px;
+      padding: 10px;
+      background-color: #a81c1c;
+    }
+    .block { display: block; }
+    .inline { display: inline; }
+    .inline-block { display: inline-block; width: 100px; }
+    
+
+    /* 2. Float with Clearfix */
+
+    .float-container img {
+      float:left;
+      color: blue;
+
+    }
+
+    /* 3. Flexbox 3-box layout */
+    .flex-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .flex-box {
+      flex: 1;
+      padding: 20px;
+      background-color: #cce5ff;
+      text-align: center;
+    }
+
+    /* 4. Centering with Flexbox */
+    .center-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center ;
+      height: 200px;
+      background-color: #10ddd6;
+      margin-top: 20px;
+    }
+    .center-flex{
+      background-color: #155724;
+      color: white;
+      padding: 20px;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Display Values</h2>
+
+  <div class="display">
+    <div class="block">Block Element</div>
+    <div class="inline">Inline Element</div>
+    <div class="inline-block">Inline-Block Element</div>
+   
+  </div>
+
+  <h2>2. Float Image with Clearfix</h2>
+  <div class="float-container clearfix">
+    <img src="https://www.apple.com/in/mac/" alt="Placeholder Image">
+    <p>
+      This text arounds the floated image.
+    </p>
+  </div>
+
+  <h2>3. Flexbox 3-Box Layout</h2>
+  <div class="flex-container">
+    <div class="flex-box">Box 1</div>
+    <div class="flex-box">Box 2</div>
+    <div class="flex-box">Box 3</div>
+  </div>
+
+  <h2>4. Centering with Flexbox</h2>
+  
+  <div class="center-flex">
+    <div class=""></div> Perfectely Centered</div>
+
+  </div>
+
+</body>
+</html>
