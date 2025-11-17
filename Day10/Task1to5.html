@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task10</title>
+     <style>
+        /* Task 1*/
+    .block {
+      display: block;
+      background-color: lightblue;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    .inline {
+      display: inline;
+      background-color: lightgreen;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: lightcoral;
+      padding: 10px;
+      margin: 5px;
+      width: 150px;
+      height: 50px;
+    }
+
+    /*task 2 */
+    .container {
+      background-color: #31119b;
+      padding: 10px;
+      border: 10px solid #0e0404;
+    }
+
+    .container::after
+    {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .left-img {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .right-img {
+      float: right;
+      margin-left: 10px;
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+    }
+
+/* task 3 */
+.flex-container {
+      display: flex;
+      justify-content: space-around;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      width: 100px;
+      text-align: center;
+      
+    }
+
+    /* Tasl 4 */
+    .flexx-container {
+      display: flex;
+      height: 200px;
+      background-color: #70bd9c;
+      padding: 10px;
+      gap: 50px;
+    }
+
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .bottom-align {
+      align-self: flex-end;
+      background-color: #FF5722;
+    }
+
+    /* Task 5 */
+
+    .grid-container {
+      display: grid;
+      grid-template-columns:  1fr ;
+      grid-template-areas:"header";
+      gap: 10px;
+      padding: 10px;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer{
+        grid-area: footer;
+        background-color: #600550;
+        color: white;
+        padding: 10px;
+        text-align: center; 
+    }
+
+</style>
+
+</head>
+<body>
+    <!--TAsk 1-->
+    <h2>Block Element</h2>
+  <div class="block">I'm a block element</div>
+  <div class="block">I stack vertically</div>
+
+  <h2>Inline Element</h2>
+  <span class="inline">I'm inline</span>
+  <span class="inline">I flow with text</span>
+
+  <h2>Inline-Block Element</h2>
+  <span class="inline-block">I'm inline-block</span>
+  <span class="inline-block">I flow inline but have box dimensions</span>
+
+<!--TAsk 2-->
+<h2>Float Left and Right with Clearfix</h2>
+  <div class="container">
+    <img src="BMW.jpg.jpg" alt="Left Image" class="left-img" width="150px">
+    <img src="BMW.jpg.jpg" alt="Right Image" class="right-img" width="150px">
+    <p>This container uses clearfix to wrap around the floated images. Without clearfix, the container would collapse and not contain the floated elements properly.</p>
+  </div>
+
+<!--Task 3-->
+ <h2>Flex Container with Evenly Spaced Boxes</h2>
+  <div class="flex-container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <!--TAsk 4-->
+  <h2>Align One Flex Item to Bottom</h2>
+  <div class="flexx-container">
+    <div class="item">Top Aligned</div>
+    <div class="item bottom-align">Bottom Aligned</div>
+  </div>
+
+<!--Task 5-->
+<div class="grid-container">
+    <header>Header</header>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
