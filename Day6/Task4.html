@@ -1,34 +1,41 @@
-
-    body{
-    background-color:lightcyan;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        /*Task4*/
+    /* Element selector: applies to all <p> elements */
+p {
+  font-size: 16px;
+  color: #333;
 }
 
-h1{
-    color: green;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-/* element selector */
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: red
+/* Class selector: applies only to elements with class="highlight" */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
 }
 
-footer{
-    font-family: cursive;
-    font-size: large;
-    text-align: center;
-    color: blueviolet;
-}
-/* class selector */
-.blue{
-   background-color: blue;
+/* ID selector: applies only to the element with id="main-heading" */
+#main-heading {
+  font-size: 32px;
+  color: teal;
+  text-align: center;
 }
 
-.yellow{
-    background-color: yellow;
-}
 
-.green{
-    background-color: green;
-}
+</style>
+</head>
+<body>
+    <!--Task4-->
+    <h1 id="main-heading">Welcome to My Page</h1>
+
+  <p>This is the first paragraph.</p>
+  <p class="highlight">This paragraph has a special style.</p>
+  <p>This is another regular paragraph.</p>
+
+</body>
+</html>
+  
