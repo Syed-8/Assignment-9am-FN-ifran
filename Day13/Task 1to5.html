@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day13</title>
+    <style>
+    .color-box {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      transition: background-color 0.5s ease;
+      
+    }
+
+    .color-box:hover {
+      background-color: #e74c3c;
+      border-radius: 50px
+    }
+
+    .moving-text {
+      position: relative;
+      font-size: 24px;
+      font-weight: bold;
+      animation: slideRight 3s ease-in-out infinite;
+    }
+
+    @keyframes slideRight {
+      0% {
+    right: 0;
+      }
+      50% {
+        bottom: 100px;
+      }
+      100% {
+        left: 5svb;
+      }
+    }
+    .zoom-image {
+      width: 100px;
+      transition: transform 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .zoom-image:hover {
+      transform: scale(1.1);
+    }
+
+    .rotating-square {
+      width: 150px;
+      height: 150px;
+      background-color: #a30b7b;
+      margin: 100px auto;
+      animation: spin 3s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+  .fancy-button {
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease,  box-shadow 0.3s ease;
+    
+    }
+
+    .fancy-button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(29, 27, 27, 0.2);
+    }
+
+    .fancy-button:focus {
+      box-shadow: 0 0 0 3px rgba(25, 111, 204, 0.5);
+    }
+
+
+
+
+  </style>
+
+</head>
+<body>
+    <div class="color-box"></div>
+
+    <div class="moving-text">Watch me move!</div>
+
+    <img src="./download (1).jpeg" alt="Sample Image" class="zoom-image">
+
+    <div class="rotating-square"></div>
+
+    <button class="fancy-button">Click Me</button>
+
+
+
+</body>
+</html>
