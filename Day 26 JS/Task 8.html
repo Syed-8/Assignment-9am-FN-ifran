@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 8</title>
+</head>
+<body>
+<ul id="list">
+  <li>Item 1</li>
+</ul>
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Item</button>
+
+<script>
+  function addItem() {
+    let newItem = document.createElement("li");
+    newItem.textContent = "New Item";
+    document.getElementById("list").appendChild(newItem);
+  }
+
+  function removeItem() {
+    let list = document.getElementById("list");
+    if (list.lastElementChild) list.removeChild(list.lastElementChild);
+  }
+</script>
+
+</body>
+</html>

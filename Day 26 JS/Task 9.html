@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 9</title>
+  <style>
+    button {
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="colorBtn" data-color="red">Red</button>
+  <button class="colorBtn" data-color="green">Green</button>
+  <button class="colorBtn" data-color="blue">Blue</button>
+
+  <script>
+    const buttons = document.querySelectorAll(".colorBtn");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        document.body.style.backgroundColor = this.dataset.color;
+      });
+    });
+  </script>
+
+</body>
+</html>

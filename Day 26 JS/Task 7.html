@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+    <input id="nameBox" placeholder="Type your name">
+    <p id="output"></p>
+
+    <script>
+        document.getElementById("nameBox").addEventListener("input",function(){
+            let val = this.value;
+            document.getElementById("output").textContent = "Hello :" + val;
+        });
+    </script>
+</body>
+</html>

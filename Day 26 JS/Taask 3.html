@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <ul id="myList"></ul>
+
+    <button onclick="addItems()"> Add Items</button>
+
+    <script>
+        function addItems(){
+            const list = document.getElementById("myList");
+        
+        const item1 = document.createElement("li");
+      item1.textContent = "Item 1";
+
+      const item2 = document.createElement("li");
+      item2.textContent = "Item 2";
+
+      const item3 = document.createElement("li");
+      item3.textContent = "Item 3";
+
+      list.appendChild(item1);
+      list.appendChild(item2);
+      list.appendChild(item3);
+        }
+    </script>
+</body>
+</html>
