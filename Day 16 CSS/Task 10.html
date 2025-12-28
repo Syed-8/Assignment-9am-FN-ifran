@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Showcase</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Featured Product</h2>
+
+  <!-- Carousel -->
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="" class="d-block w-50" alt="Product Image 1">
+      </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Product Info -->
+  <div class="mt-4 text-center">
+    <h4>Smartphone X200</h4>
+    <p class="text-muted">Sleek design, powerful performance, and cutting-edge features.</p>
+
+    <!-- Collapse Trigger -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#moreDetails">
+      More Details
+    </button>
+
+    <!-- Collapse Content -->
+    <div class="collapse mt-3" id="moreDetails">
+      <div class="card card-body text-start">
+        <ul>
+          <li>6.5" AMOLED Display</li>
+          <li>128GB Storage, 8GB RAM</li>
+          <li>Triple Camera System (48MP + 12MP + 5MP)</li>
+          <li>5000mAh Battery with Fast Charging</li>
+          <li>Available in Black, Silver, and Blue</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
