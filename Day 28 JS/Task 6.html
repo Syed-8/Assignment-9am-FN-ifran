@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <h3>Find the Error:</h3>
+<pre>
+let x = 10
+console.log(x)
+</pre>
+
+<button onclick="checkAnswer()">Check Answer</button>
+<p id="result"></p>
+
+<script>
+function checkAnswer() {
+  document.getElementById("result").innerText =
+    "❌ Missing semicolon (;) after 10";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+    <form id="loginForm">
+  <input type="text" id="user" placeholder="Username"><br><br>
+  <input type="password" id="pass" placeholder="Password"><br><br>
+  <button type="submit">Login</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let user = user.value;
+  let pass = pass.value;
+
+  if (user === "" || pass === "") {
+    msg.innerText = "❌ All fields required!";
+  } else if (pass.length < 6) {
+    msg.innerText = "❌ Password too short!";
+  } else {
+    msg.innerText = "✅ Login successful!";
+  }
+});
+</script>
+
+</body>
+</html>
