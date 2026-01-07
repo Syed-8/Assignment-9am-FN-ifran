@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Styling Demo</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    /* Universal selector: reset margins and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Grouping selectors: h1, h2, h3 same color */
+    h1, h2, h3 {
+      color: rgb(84, 61, 139);
+      font-family: Arial, sans-serif;
+    }
+
+    /* Type selector: all paragraphs */
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Class selector */
+    .section {
+      background-color: #f0f8ff;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+
+    /* ID selector */
+    #special {
+      background-color: #ffe4b5;
+      border: 2px solid #ff8c00;
+      font-weight: bold;
+      padding: 12px;
+    }
+
+    /* Attribute selectors for input fields */
+    input[type="text"] {
+      border: 2px solid #4ae24f;
+      padding: 6px;
+      margin: 5px;
+    }
+
+    input[type="password"] {
+      border: 2px solid #e94e77;
+      padding: 6px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Grouped headings -->
+  <h1>Main Heading</h1>
+  <h2>Subheading</h2>
+  <h3>Minor Heading</h3>
+
+  <!-- Paragraph styled with inline, internal, and external CSS -->
+  <p class="section" id="special"
+     style="color: #1a1a1a; background: #fafafa;">
+    This paragraph demonstrates styling with inline CSS (text color and background),
+    internal CSS (padding, borders, font size), and external CSS (font family and spacing).
+  </p>
+
+  <!-- Another section using class selector -->
+  <div class="section">
+    <p>This section is styled using a <strong>class selector</strong>.</p>
+  </div>
+
+  <!-- Input fields styled with attribute selectors -->
+  <form>
+    <label>Username: <input type="text" placeholder="Enter username"></label><br>
+    <label>Password: <input type="password" placeholder="Enter password"></label>
+  </form>
+</body>
+</html>
