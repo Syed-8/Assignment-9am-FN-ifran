@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <style>
+    .dark {
+  background-color: black;
+  color: white;
+}
+    </style>
+
+
+</head>
+<body>
+
+<button onclick="toggleTheme()">Toggle Theme</button>
+
+    
+    <script>
+       function toggleTheme() {
+  const body = document.body;
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "dark") {
+    body.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  } else {
+    body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+// Apply theme on page load
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+}
+
+
+    </script>
+</body>
+</html>
