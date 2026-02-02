@@ -1,0 +1,15 @@
+import React, { useState } from 'react'
+
+function CounterApp() {
+    const [count, setCount] = useState(1)
+
+  return (
+    <div>
+      <h2> count:{count}</h2>
+      <button onClick={()=>setCount(count+1)}>+</button>
+      <button onClick={()=>setCount(0)}>Reset</button>
+    </div>
+  )
+}
+
+export default CounterApp
